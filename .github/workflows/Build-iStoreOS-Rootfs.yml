@@ -1,4 +1,4 @@
-name: Build iStore OS 6.x
+name: Build-iStoreOS-Rootfs
 
 on:
   repository_dispatch:
