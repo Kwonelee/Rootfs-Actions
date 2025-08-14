@@ -190,7 +190,7 @@ jobs:
       run: |
         touch release.txt
         echo "
-        💻 架构: ${{ matrix.ARCHITECTURE }}
+        💻 架构: armsr-${{ matrix.ARCHITECTURE }}
 
         📂 源码: ${{ env.REPO_URL }}
 
@@ -202,7 +202,7 @@ jobs:
       uses: softprops/action-gh-release@v2
       if: steps.tag.outputs.status == 'success' && !cancelled()
       with:
-        tag_name: ${{ matrix.ARCHITECTURE }}
+        tag_name: generic-rootfs
         body_path: release.txt
         files: ${{ env.FIRMWARE }}/*generic-rootfs.tar.gz
 
