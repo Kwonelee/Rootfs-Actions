@@ -189,6 +189,7 @@ jobs:
       if: steps.compile.outputs.status == 'success' && env.UPLOAD_RELEASE == 'true' && !cancelled()
       run: |
         touch release.txt
+        echo "release_tag=$(date +"%Y.%m.%d-%H.%M")-${{ matrix.ARCHITECTURE }}" >> ${GITHUB_OUTPUT}
         echo "
         💻 架构: armsr-${{ matrix.ARCHITECTURE }}
 
@@ -196,7 +197,8 @@ jobs:
 
         🌳 分支: ${{ matrix.REPO_BRANCH }}
 
-        ⏱️ 编译时间: $(date +"%Y年%m月%d日%H时%M分")
+        ⏱️ 编译时间: $(date +"%Y年%m月%d日%H时%M分") " >> release.txt
+        echo "status=success" >> ${GITHUB_OUTPUT}
 
     - name: 自动发布固件到 Releases
       uses: softprops/action-gh-release@v2
