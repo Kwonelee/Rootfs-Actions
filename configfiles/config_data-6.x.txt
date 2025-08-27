@@ -24,8 +24,10 @@ CONFIG_TARGET_ROOTFS_TARGZ=y
 # CONFIG_TARGET_DEVICE_rockchip_armv8_DEVICE_lyt_t68m is not set
 # CONFIG_TARGET_DEVICE_rockchip_armv8_DEVICE_lyt_t88m is not set
 # CONFIG_TARGET_DEVICE_rockchip_armv8_DEVICE_radxa_e20c is not set
+# CONFIG_TARGET_DEVICE_rockchip_armv8_DEVICE_radxa_e24c is not set
 # CONFIG_TARGET_DEVICE_rockchip_armv8_DEVICE_radxa_e52c is not set
 # CONFIG_TARGET_DEVICE_rockchip_armv8_DEVICE_radxa_e54c is not set
+# CONFIG_TARGET_DEVICE_rockchip_armv8_DEVICE_roceos_k60pro is not set
 # CONFIG_TARGET_DEVICE_rockchip_armv8_DEVICE_xunlong_orangepi-5-plus is not set
 CONFIG_PACKAGE_perlbase-file=y
 CONFIG_PACKAGE_perlbase-time=y
