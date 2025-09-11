@@ -7,7 +7,7 @@
 # Blog: https://p3terx.com
 #===============================================
 
-# 集成开机脚本
+# 集成首次运行脚本
 cp $GITHUB_WORKSPACE/configfiles/99-custom.sh package/base-files/files/etc/uci-defaults/
 
 # 添加定时限速
