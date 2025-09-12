@@ -13,3 +13,9 @@
 # 添加amlogic
 rm -rf package/luci-app-amlogic
 git clone --depth=1 https://github.com/ophub/luci-app-amlogic.git package/luci-app-amlogic
+
+rm -rf feeds/packages/lang/golang
+git clone https://github.com/sbwml/packages_lang_golang -b 24.x feeds/packages/lang/golang
+
+# 添加openlist2
+git clone --depth=1 https://github.com/sbwml/luci-app-openlist2 package/openlist
