@@ -8,6 +8,7 @@
 #===============================================
 
 # 移除要替换的包
+rm -rf feeds/third_party/luci-app-LingTiGameAcc
 rm -rf feeds/luci/applications/luci-app-turboacc
 
 # Git稀疏克隆，只克隆指定目录到本地
