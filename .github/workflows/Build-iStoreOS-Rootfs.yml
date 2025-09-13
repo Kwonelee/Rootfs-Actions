@@ -204,7 +204,7 @@ jobs:
       uses: softprops/action-gh-release@v2
       if: steps.tag.outputs.status == 'success' && !cancelled()
       with:
-        tag_name: generic-rootfs
+        tag_name: generic-rootfs-test
         body_path: release.txt
         files: ${{ env.FIRMWARE }}/*generic-rootfs.tar.gz
 
