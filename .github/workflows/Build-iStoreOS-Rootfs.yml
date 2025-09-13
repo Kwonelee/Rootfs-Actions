@@ -191,13 +191,13 @@ jobs:
         touch release.txt
         echo "release_tag=$(date +"%Y.%m.%d-%H.%M")-${{ matrix.ARCHITECTURE }}" >> ${GITHUB_OUTPUT}
         echo "
-        💻 架构: armsr-${{ matrix.ARCHITECTURE }}
+        💻 Architecture: armsr-${{ matrix.ARCHITECTURE }}
 
-        📂 源码: ${{ env.REPO_URL }}
+        🔀 Branch: ${{ matrix.REPO_BRANCH }}
 
-        🌳 分支: ${{ matrix.REPO_BRANCH }}
+        📂 Source Code: ${{ env.REPO_URL }}
 
-        ⏱️ 编译时间: $(date +"%Y年%m月%d日%H时%M分") " >> release.txt
+        🕒 Compilation Time: $(date +"%Y年%m月%d日%H时%M分") " >> release.txt
         echo "status=success" >> ${GITHUB_OUTPUT}
 
     - name: 自动发布固件到 Releases
