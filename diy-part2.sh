@@ -10,6 +10,7 @@
 # 移除要替换的包
 rm -rf feeds/third_party/luci-app-LingTiGameAcc
 rm -rf feeds/luci/applications/luci-app-turboacc
+rm -rf package/diy/luci-app-ota
 
 # Git稀疏克隆，只克隆指定目录到本地
 function git_sparse_clone() {
@@ -46,6 +47,8 @@ function merge_package() {
 }
 
 git_sparse_clone luci https://github.com/chenmozhijin/turboacc luci-app-turboacc
+git_sparse_clone main https://github.com/Jaykwok2999/istoreos-ota luci-app-ota
+git_sparse_clone main https://github.com/zijieKwok/github-ota fw_download_tool
 
 # 添加定时限速
 #git clone --depth=1 https://github.com/sirpdboy/luci-app-eqosplus package/luci-app-eqosplus
@@ -53,11 +56,6 @@ git_sparse_clone luci https://github.com/chenmozhijin/turboacc luci-app-turboacc
 # 添加amlogic
 rm -rf package/luci-app-amlogic
 git clone --depth=1 https://github.com/ophub/luci-app-amlogic.git package/luci-app-amlogic
-
-#在线OTA
-rm -rf package/diy/luci-app-ota
-git_sparse_clone main https://github.com/sos801107/istoreos-ota luci-app-ota
-git_sparse_clone main https://github.com/sos801107/istoreos-ota fw_download_tool
 
 git clone https://github.com/destan19/OpenAppFilter.git package/OpenAppFilter
 
