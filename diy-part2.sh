@@ -47,8 +47,8 @@ function merge_package() {
 }
 
 git_sparse_clone luci https://github.com/chenmozhijin/turboacc luci-app-turboacc
-git_sparse_clone main https://github.com/Jaykwok2999/istoreos-ota luci-app-ota
-git_sparse_clone main https://github.com/zijieKwok/github-ota fw_download_tool
+git_sparse_clone main https://github.com/Kwonelee/istoreos-ota luci-app-ota
+git_sparse_clone main https://github.com/Kwonelee/github-ota fw_download_tool
 
 # 添加定时限速
 #git clone --depth=1 https://github.com/sirpdboy/luci-app-eqosplus package/luci-app-eqosplus
