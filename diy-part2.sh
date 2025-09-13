@@ -50,9 +50,6 @@ git_sparse_clone luci https://github.com/chenmozhijin/turboacc luci-app-turboacc
 git_sparse_clone main https://github.com/Kwonelee/istoreos-ota luci-app-ota
 git_sparse_clone main https://github.com/Kwonelee/github-ota fw_download_tool
 
-# 添加定时限速
-#git clone --depth=1 https://github.com/sirpdboy/luci-app-eqosplus package/luci-app-eqosplus
-
 # 添加amlogic
 rm -rf package/luci-app-amlogic
 git clone --depth=1 https://github.com/ophub/luci-app-amlogic.git package/luci-app-amlogic
