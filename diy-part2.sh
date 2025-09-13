@@ -57,8 +57,6 @@ git_sparse_clone main https://github.com/zijieKwok/github-ota fw_download_tool
 rm -rf package/luci-app-amlogic
 git clone --depth=1 https://github.com/ophub/luci-app-amlogic.git package/luci-app-amlogic
 
-git clone https://github.com/destan19/OpenAppFilter.git package/OpenAppFilter
-
 # golong25.x依赖
 rm -rf feeds/packages/lang/golang
 git clone https://github.com/sbwml/packages_lang_golang -b 25.x feeds/packages/lang/golang
