@@ -48,7 +48,7 @@ function merge_package() {
 
 git_sparse_clone luci https://github.com/chenmozhijin/turboacc luci-app-turboacc
 git_sparse_clone main https://github.com/Kwonelee/istoreos-ota luci-app-ota
-git_sparse_clone main https://github.com/Kwonelee/github-ota fw_download_tool
+git_sparse_clone main https://github.com/Kwonelee/istoreos-ota fw_download_tool
 
 # 添加amlogic
 rm -rf package/luci-app-amlogic
