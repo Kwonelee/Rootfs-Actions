@@ -11,7 +11,6 @@
 rm -rf feeds/third_party/luci-app-LingTiGameAcc
 rm -rf feeds/packages/net/filebrowser
 rm -rf feeds/kenzo/luci-app-filebrowser
-rm -rf feeds/packages/net/adguardhome
 rm -rf feeds/kenzo/luci-app-adguardhome
 rm -rf feeds/luci/applications/luci-app-turboacc
 rm -rf package/diy/luci-app-ota
@@ -64,9 +63,6 @@ git_sparse_clone main https://github.com/Kwonelee/istoreos-ota fw_download_tool
 # 添加luci-app-amlogic
 rm -rf package/luci-app-amlogic
 git clone https://github.com/ophub/luci-app-amlogic.git package/luci-app-amlogic
-
-# 添加luci-app-openlist2
-git clone https://github.com/sbwml/luci-app-openlist2 package/openlist
 
 # golong25.x依赖
 rm -rf feeds/packages/lang/golang
