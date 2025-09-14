@@ -9,10 +9,10 @@
 
 # 移除待替换的/非必要包
 rm -rf feeds/third_party/luci-app-LingTiGameAcc
-rm -rf feeds/packages/net/adguardhome
-rm -rf feeds/kenzo/luci-app-adguardhome
 rm -rf feeds/packages/net/filebrowser
 rm -rf feeds/kenzo/luci-app-filebrowser
+rm -rf feeds/packages/net/adguardhome
+rm -rf feeds/kenzo/luci-app-adguardhome
 rm -rf feeds/luci/applications/luci-app-turboacc
 rm -rf package/diy/luci-app-ota
 
