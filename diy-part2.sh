@@ -55,7 +55,7 @@ git_sparse_clone main https://github.com/Kwonelee/istoreos-ota fw_download_tool
 
 # 添加amlogic
 rm -rf package/luci-app-amlogic
-git clone --depth=1 https://github.com/ophub/luci-app-amlogic.git package/luci-app-amlogic
+git clone https://github.com/ophub/luci-app-amlogic.git package/luci-app-amlogic
 
 # golong25.x依赖
 rm -rf feeds/packages/lang/golang
