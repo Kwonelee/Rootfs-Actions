@@ -48,6 +48,8 @@ function merge_package() {
     cd "$rootdir"
 }
 
+git_sparse_clone main https://github.com/kenzok8/small-package filebrowser
+git_sparse_clone main https://github.com/kenzok8/small-package luci-app-filebrowser
 git_sparse_clone luci https://github.com/chenmozhijin/turboacc luci-app-turboacc
 git_sparse_clone packages https://github.com/chenmozhijin/turboacc
 git_sparse_clone master https://github.com/vernesong/OpenClash luci-app-openclash
