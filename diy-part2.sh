@@ -53,11 +53,11 @@ function merge_package() {
 git_sparse_clone main https://github.com/kenzok8/small-package filebrowser
 git_sparse_clone main https://github.com/kenzok8/small-package luci-app-filebrowser
 git_sparse_clone main https://github.com/kenzok8/small-package luci-app-ramfree
-git_sparse_clone packages https://github.com/chenmozhijin/turboacc .
+git_sparse_clone packages https://github.com/chenmozhijin/turboacc
 git_sparse_clone luci https://github.com/chenmozhijin/turboacc luci-app-turboacc
 git_sparse_clone master https://github.com/vernesong/OpenClash luci-app-openclash
 git_sparse_clone js https://github.com/sirpdboy/luci-app-adguardhome luci-app-adguardhome
-# git_sparse_clone main https://github.com/kiddin9/luci-app-adguardhome .
+# git_sparse_clone main https://github.com/kiddin9/luci-app-adguardhome
 git_sparse_clone main https://github.com/Kwonelee/istoreos-ota luci-app-ota
 git_sparse_clone main https://github.com/Kwonelee/istoreos-ota fw_download_tool
 
