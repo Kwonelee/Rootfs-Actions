@@ -7,7 +7,7 @@
 # Blog: https://p3terx.com
 #===============================================
 
-# 移除要替换的包
+# 移除待替换的/非必要包
 rm -rf feeds/third_party/luci-app-LingTiGameAcc
 rm -rf feeds/packages/net/adguardhome
 rm -rf feeds/kenzo/luci-app-adguardhome
