@@ -61,9 +61,12 @@ git_sparse_clone js https://github.com/sirpdboy/luci-app-adguardhome luci-app-ad
 git_sparse_clone main https://github.com/Kwonelee/istoreos-ota luci-app-ota
 git_sparse_clone main https://github.com/Kwonelee/istoreos-ota fw_download_tool
 
-# 添加amlogic
+# 添加luci-app-amlogic
 rm -rf package/luci-app-amlogic
 git clone https://github.com/ophub/luci-app-amlogic.git package/luci-app-amlogic
+
+# 添加luci-app-openlist2
+git clone https://github.com/sbwml/luci-app-openlist2 package/openlist
 
 # golong25.x依赖
 rm -rf feeds/packages/lang/golang
