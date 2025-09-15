@@ -54,7 +54,7 @@ function merge_package() {
 #git_sparse_clone main https://github.com/kenzok8/small-package luci-app-ramfree
 #git_sparse_clone package https://github.com/chenmozhijin/turboacc
 git_sparse_clone luci https://github.com/chenmozhijin/turboacc luci-app-turboacc
-git_sparse_clone master https://github.com/vernesong/OpenClash luci-app-openclash
+#git_sparse_clone master https://github.com/vernesong/OpenClash luci-app-openclash
 git_sparse_clone js https://github.com/sirpdboy/luci-app-adguardhome luci-app-adguardhome
 #git_sparse_clone main https://github.com/kiddin9/luci-app-adguardhome
 git_sparse_clone main https://github.com/Kwonelee/istoreos-ota luci-app-ota
@@ -65,8 +65,8 @@ rm -rf package/luci-app-amlogic
 git clone https://github.com/ophub/luci-app-amlogic.git package/luci-app-amlogic
 
 # golong25.x依赖
-rm -rf feeds/packages/lang/golang
-git clone https://github.com/sbwml/packages_lang_golang -b 25.x feeds/packages/lang/golang
+#rm -rf feeds/packages/lang/golang
+#git clone https://github.com/sbwml/packages_lang_golang -b 25.x feeds/packages/lang/golang
 
 # 必要的补丁
 pushd
