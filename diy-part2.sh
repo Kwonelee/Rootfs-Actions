@@ -7,6 +7,9 @@
 # Blog: https://p3terx.com
 #===============================================
 
+# 解决rust报错
+#sed -i 's/--set=llvm.download-ci-llvm=true/--set=llvm.download-ci-llvm=false/' feeds/packages/lang/rust/Makefile
+
 # 移除待替换/非必要包
 rm -rf feeds/third_party/luci-app-LingTiGameAcc
 
