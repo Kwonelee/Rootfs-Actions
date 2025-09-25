@@ -59,4 +59,4 @@ git clone https://github.com/ophub/luci-app-amlogic package/luci-app-amlogic
 
 # sbwml/openwrt_pkgs
 git_sparse_clone main https://github.com/sbwml/openwrt_pkgs luci-app-ramfree
-git_sparse_clone main https://github.com/Kwonelee/package luci-app-filebrowser-go filebrowser
+git_sparse_clone main https://github.com/Kwonelee/istoreos_pkgs luci-app-filebrowser-go filebrowser
