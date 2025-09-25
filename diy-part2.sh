@@ -51,7 +51,7 @@ git clone https://github.com/sbwml/packages_lang_golang -b 25.x feeds/packages/l
 git_sparse_clone openwrt-24.10 https://github.com/sbwml/luci-theme-argon luci-theme-argon luci-app-argon-config
 
 # 添加amlogic
-git clone https://github.com/ophub/luci-app-amlogic.git package/luci-app-amlogic
+git clone https://github.com/ophub/luci-app-amlogic package/luci-app-amlogic
 
 # sbwml/openwrt_pkgs
 git_sparse_clone main https://github.com/sbwml/openwrt_pkgs luci-app-ramfree
