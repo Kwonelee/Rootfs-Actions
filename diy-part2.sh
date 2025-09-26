@@ -58,3 +58,6 @@ git_sparse_clone main https://github.com/ophub/luci-app-amlogic luci-app-amlogic
 
 # sbwml/openwrt_pkgs
 git_sparse_clone main https://github.com/sbwml/openwrt_pkgs filebrowser luci-app-filebrowser-go luci-app-ramfree
+
+# sbwml/autocore-arm
+git clone https://github.com/sbwml/autocore-arm -b openwrt-24.10 package/system/autocore
