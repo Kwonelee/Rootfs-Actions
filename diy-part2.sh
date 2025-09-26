@@ -51,7 +51,7 @@ git clone https://github.com/sbwml/packages_lang_golang -b 25.x feeds/packages/l
 #git clone -b master https://github.com/w9315273/luci-app-adguardhome package/luci-app-adguardhome
 
 # zhao/luci-theme-argon
-git_sparse_clone main https://git.kejizero.online/zhao/luci-theme-argon luci-theme-argon luci-app-argon-config
+git_sparse_clone openwrt-24.10 https://git.kejizero.online/zhao/luci-theme-argon luci-theme-argon luci-app-argon-config
 
 # 添加amlogic
 git_sparse_clone main https://github.com/ophub/luci-app-amlogic luci-app-amlogic
