@@ -1,7 +1,7 @@
 # Rootfs-Actions
 
 # 🤔Introduce
-> **仅用于定时构建istoreos-armsr-armv8-generic-rootfs通用底包**
+> **Only used for scheduled builds of the istoreos-armsr-armv8-generic-rootfs generic base package.**
 
 # 🙏Thanks
 - [istoreos](https://github.com/istoreos/istoreos)
