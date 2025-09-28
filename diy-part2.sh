@@ -12,6 +12,8 @@
 # ================================================================
 # 集成config
 wget -qO- https://raw.githubusercontent.com/Kwonelee/iStoreOS-Actions/refs/heads/main/files/etc/rc.local > package/base-files/files/etc/rc.local
+mkdir -p files/etc/opkg
+wget -qO- https://raw.githubusercontent.com/Kwonelee/iStoreOS-Actions/refs/heads/main/files/etc/opkg/distfeeds.conf > files/etc/opkg/distfeeds.conf
 
 # 移除要替换的包
 rm -rf feeds/packages/net/adguardhome
