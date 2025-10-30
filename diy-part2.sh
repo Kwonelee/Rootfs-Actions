@@ -19,9 +19,6 @@ wget -qO- https://raw.githubusercontent.com/Kwonelee/iStoreOS-Actions/refs/heads
 rm -rf feeds/packages/net/adguardhome
 rm -rf feeds/third_party/luci-app-LingTiGameAcc
 rm -rf feeds/luci/applications/luci-app-filebrowser
-# istoreos-theme
-#rm -rf feeds/third/luci-theme-argon
-#rm -rf feeds/third/luci-app-argon-config
 
 # Set Rust build arg llvm.download-ci-llvm to false.
 RUST_MAKEFILE="feeds/packages/lang/rust/Makefile"
@@ -38,7 +35,7 @@ function git_sparse_clone() {
   git clone --depth=1 -b $branch --single-branch --filter=blob:none --sparse $repourl
   repodir=$(echo $repourl | awk -F '/' '{print $(NF)}')
   cd $repodir && git sparse-checkout set $@
-  mv -f $@ ../package
+  mv -f $@ ../package/new
   cd .. && rm -rf $repodir
 }
 
@@ -50,20 +47,8 @@ git clone https://github.com/sbwml/packages_lang_golang -b 25.x feeds/packages/l
 rm -rf feeds/packages/lang/node
 git clone https://github.com/sbwml/feeds_packages_lang_node-prebuilt feeds/packages/lang/node -b packages-24.10
 
-# 常见插件
-#git_sparse_clone master https://github.com/vernesong/OpenClash luci-app-openclash
-#git_sparse_clone main https://github.com/gdy666/luci-app-lucky luci-app-lucky lucky
-#git_sparse_clone main https://github.com/sbwml/luci-app-openlist2 luci-app-openlist2 openlist2
-#git clone -b master https://github.com/w9315273/luci-app-adguardhome package/luci-app-adguardhome
-
-# zhao/luci-theme-argon
-#git_sparse_clone openwrt-24.10 https://git.kejizero.online/zhao/luci-theme-argon luci-theme-argon luci-app-argon-config
-
 # ophub/amlogic
 git_sparse_clone main https://github.com/ophub/luci-app-amlogic luci-app-amlogic
 
 # sbwml/openwrt_pkgs
 git_sparse_clone main https://github.com/sbwml/openwrt_pkgs filebrowser luci-app-filebrowser-go luci-app-ramfree
-
-# sbwml/autocore-arm
-#git clone https://github.com/sbwml/autocore-arm -b openwrt-24.10 package/system/autocore
