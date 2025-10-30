@@ -19,6 +19,9 @@ wget -qO- https://raw.githubusercontent.com/Kwonelee/iStoreOS-Actions/refs/heads
 rm -rf feeds/packages/net/adguardhome
 rm -rf feeds/third_party/luci-app-LingTiGameAcc
 rm -rf feeds/luci/applications/luci-app-filebrowser
+# istoreos-theme
+#rm -rf feeds/third/luci-theme-argon
+#rm -rf feeds/third/luci-app-argon-config
 
 # Set Rust build arg llvm.download-ci-llvm to false.
 RUST_MAKEFILE="feeds/packages/lang/rust/Makefile"
