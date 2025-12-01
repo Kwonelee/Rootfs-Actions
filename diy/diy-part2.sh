@@ -17,18 +17,6 @@ wget -qO- https://raw.githubusercontent.com/Kwonelee/iStoreOS-Actions/refs/heads
 rm -rf feeds/packages/net/adguardhome
 rm -rf feeds/third_party/luci-app-LingTiGameAcc
 rm -rf feeds/luci/applications/luci-app-filebrowser
-# istoreos-theme
-#rm -rf feeds/third/luci-theme-argon
-#rm -rf feeds/third/luci-app-argon-config
-
-# Set Rust build arg llvm.download-ci-llvm to false.
-RUST_MAKEFILE="feeds/packages/lang/rust/Makefile"
-if [[ -f "${RUST_MAKEFILE}" ]]; then
-  printf "Modifying %s...\n" "${RUST_MAKEFILE}"
-  sed -i 's/--set=llvm\.download-ci-llvm=true/--set=llvm.download-ci-llvm=false/' "${RUST_MAKEFILE}"
-else
-  echo "File ${RUST_MAKEFILE} does not exist." >&2
-fi
 
 # Git稀疏克隆，只克隆指定目录到本地
 function git_sparse_clone() {
@@ -40,16 +28,6 @@ function git_sparse_clone() {
   cd .. && rm -rf $repodir
 }
 
-# golang
-rm -rf feeds/packages/lang/golang
-git clone https://github.com/sbwml/packages_lang_golang -b 25.x feeds/packages/lang/golang
-
-# node
-rm -rf feeds/packages/lang/node
-git clone https://github.com/sbwml/feeds_packages_lang_node-prebuilt feeds/packages/lang/node -b packages-24.10
-
-# ophub/amlogic
+# 常见插件
 git_sparse_clone main https://github.com/ophub/luci-app-amlogic luci-app-amlogic
-
-# sbwml/openwrt_pkgs
 git_sparse_clone main https://github.com/sbwml/openwrt_pkgs filebrowser luci-app-filebrowser-go luci-app-ramfree
