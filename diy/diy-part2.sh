@@ -31,4 +31,5 @@ function git_sparse_clone() {
 # 常见插件
 git_sparse_clone main https://github.com/ophub/luci-app-amlogic luci-app-amlogic
 git_sparse_clone main https://github.com/sbwml/openwrt_pkgs filebrowser luci-app-filebrowser-go luci-app-ramfree
-sed -i 's/2.31.2/2.54.0/g' package/new/filebrowser/Makefile
+FB_VERSION="$(curl -s https://github.com/filebrowser/filebrowser/tags | grep -Eo 'v[0-9]+\.[0-9]+\.[0-9]+' | head -n 1 | sed 's/^v//')"
+sed -i "s/2.31.2/$FB_VERSION/g" package/new/filebrowser/Makefile
