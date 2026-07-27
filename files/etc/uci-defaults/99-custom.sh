@@ -98,4 +98,10 @@ uci delete ttyd.@ttyd[0].interface
 uci set dropbear.@dropbear[0].Interface=''
 uci commit
 
+# 设置版本信息
+FILE_PATH="/etc/openwrt_release"
+NEW_DESCRIPTION="iStoreOS 版本号 @kwonelee"
+sed -i "s/^DISTRIB_REVISION=.*/DISTRIB_REVISION=''/" "$FILE_PATH"
+sed -i "s#^DISTRIB_DESCRIPTION=.*#DISTRIB_DESCRIPTION='$NEW_DESCRIPTION'#" "$FILE_PATH"
+
 exit 0
