@@ -16,6 +16,7 @@ wget -qO- https://raw.githubusercontent.com/Kwonelee/iStoreOS-Actions/refs/heads
 # 移除要替换的包
 rm -rf feeds/packages/net/adguardhome
 rm -rf feeds/third_party/luci-app-LingTiGameAcc
+rm -rf feeds/luci/luci-app-radicale3
 rm -rf feeds/luci/applications/luci-app-filebrowser
 
 # Git稀疏克隆，只克隆指定目录到本地
